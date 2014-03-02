@@ -1,0 +1,45 @@
+html {
+    background: @backgroundColor;
+    color: @black;
+}
+
+body {
+    .font-default(14px);
+}
+
+.page-wrapper {
+    width: 800px;
+    margin: 0px auto;
+
+    .head {
+        //        border-bottom: 1px solid red;
+        
+        padding: 10px 5px 0;
+        
+        .lbl-scope {
+            color: @gray;
+        }
+        
+        .lbl-portfolio {
+            float: right;
+        }
+        
+    }
+    
+    .foot {
+        clear: both;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    .content {
+        .shade {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            .background-opacity(gray, 0.9);
+        }
+    }
+}

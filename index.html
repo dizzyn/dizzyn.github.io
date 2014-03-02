@@ -1,0 +1,226 @@
+﻿<html>
+    <head>
+        <title>tomas randus - portfolio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script>
+            $(function() {
+                $(".pod").click(function(e) {
+                    var $this = $(this);
+
+                    $this.addClass("expanded");
+                    $(".shade").css("display", "block");
+                })
+
+                $(".shade, .pod .btn-close").click(function(e) {
+                    $(".pod.expanded").removeClass("expanded");
+                    $(".shade").css("display", "none");
+                    e.stopPropagation();
+                });
+
+            });
+        </script>
+
+        <!--
+        
+         x infinite scroll library
+         - lercards
+         x wirenode.com
+         x mobilni platby.cz
+         x ignition
+         x kamasne
+        
+         - Violin Learning Course
+         - Summgame
+        
+        -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+
+        <div class="page-wrapper page-wrapper-index">
+            <div class="head">
+                <h1>tomas randus<span class='lbl-scope'> - js / java / css developer</span> <span class="lbl-portfolio">portfolio</span></h1>
+            </div>
+            <div class="content">
+                <div class="shade" style='display: none'></div>
+                <div class="pods">
+
+                    <div class="pod color-1">
+                        <div class="thumbnail square colored">
+                            <div class="title">
+                                <h3>Infinite Scrolly</h3>
+                            </div>
+                        </div>
+                        <div class="thumbnail modal-header colored">
+                            <span class="btn-close">x</span>
+                            <div class="title">
+                                <h3>Infinite scroll opensource library</h3>
+                            </div>
+                        </div>
+                        <div class="description">
+                            It's a GNU/GPL  Javascript library based on <a href='http://backbonejs.org/'>BackboneJS MVC framework</a>.  
+                        </div>
+                        <ul class="actions">
+                            <li><a href='#' class="colored">See the repository on GitHub</a></li>
+                        </ul>
+                    </div><!-- /pod -->
+
+                    <div class="pod color-2">
+                        <div class="thumbnail square colored">
+                            <div class="title">
+                                <h3>Wirenode</h3>
+                            </div>
+                        </div>
+                        <div class="thumbnail modal-header colored">
+                            <span class="btn-close">x</span>
+                            <div class="title">
+                                <h3>Wirenode - Mobile website composer</h3>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                The service is based on flexible J2EE CMS with a device recognition engine. The are <b>139.559</b> websites built by the platform.   
+                            </p>
+
+                            <ul class="screenshots single">
+                                <li>
+                                    <div class="screen">
+                                        <img src="img/wirenode3.png" alt="screen 1.">
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <p>
+                                My contribution was: <span class='contrib'>JS development</span>, <span class='contrib'>Product management</span>, <span class='contrib'>Marketing activities</span>
+                            </p>
+                        </div>
+                        <ul class="actions">
+                            <li><a  class="colored" href='http://wirenode.com'>Checkout the service online</a></li>
+                            <li><a  class="colored" href='http://techcrunch.com/search/wirenode#stq=wirenode&stp=1'>See the refernces on TechCrunch</a></li>
+                        </ul>
+                    </div><!-- /pod -->
+
+                    <div class="pod color-3">
+                        <div class="thumbnail square colored">
+                            <div class="title">
+                                <h3>Pay by SMS</h3>
+                            </div>
+                        </div>
+                        <div class="thumbnail modal-header colored">
+                            <span class="btn-close">x</span>
+                            <div class="title">
+                                <h3>SMS micro-payment solution</h3>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                I have invented and developed a open SMS gateway for longtail market. It's a JAVA EE based system     
+                            </p>
+                            <p>
+                                My contribution was: <span class='contrib'>JAVA development</span>, <span class='contrib'>Product management</span>, <span class='contrib'>Processes</span>, <span class='contrib'>Marketing</span>
+                            </p>
+                        </div>
+                        <ul class="actions">
+                            <li><a class="colored" href='http://mobilniplatby.cz'>Checkout the service online</a></li>
+                        </ul>
+                    </div><!-- /pod -->
+
+                    <div class="pod color-4">
+                        <div class="thumbnail square colored">
+                            <div class="title">
+                                <h3>Ignition</h3>
+                            </div>
+                        </div>
+                        <div class="thumbnail modal-header colored">
+                            <span class="btn-close">x</span>
+                            <div class="title">
+                                <h3>Ignition CSS/LESS methodics</h3>
+                            </div>
+                        </div>
+                        <div class="description">
+                            This package helps companies to adopt a clean <a href='http://lesscss.org/'>LESS</a> based development. The package contains:
+                            <ul class='attrs'>
+                                <li>Introdution - what is the LESS, what is the package itself</li>
+                                <li>New project wizard</li>
+                                <li>7 Coding rules</li>
+                                <li>Initial code package (the framework)</li>
+                            </ul>
+                        </div>
+                        <ul class="actions">
+                            <li><a class="colored" href='http://kamasne.cz'>Download the <span class='ptt'>PTT</span> presentation</a></li>
+                            <li><a class="colored" href='http://kamasne.cz'>Check out the demonstration sources on github</a></li>
+                        </ul>
+                    </div><!-- /pod -->
+
+                    <div class="pod color-5">
+                        <div class="thumbnail square colored">
+                            <div class="title">
+                                <h3>Kamašne</h3>
+                            </div>
+                        </div>
+                        <div class="thumbnail modal-header colored">
+                            <span class="btn-close">x</span>
+                            <div class="title">
+                                <h3>Kamašne - Music Band Website</h3>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                It's a simple responsive website created for my friends
+                            </p>
+                            <ul class="screenshots single">
+                                <li>
+                                    <div class="screen">
+                                        <img src="img/kamasne.png" alt="screen 1.">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="actions">
+                            <li><a class="colored" href='http://kamasne.cz'>Enjoy the site</a></li>
+                        </ul>
+                    </div><!-- /pod -->
+
+                    <div class="pod color-6 expanded">
+                        <div class="thumbnail square colored">
+                            <div class="title">
+                                <h3>Memorizer</h3>
+                            </div>
+                        </div>
+                        <div class="thumbnail modal-header colored">
+                            <span class="btn-close">x</span>
+                            <div class="title">
+                                <h3>Memorizer - The learning tool</h3>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                It's a learning tool with interactive flash cards. Mostly created for myself. Its hosted by the Google App Engine in it's new PHP version. Users are authorised by a Google account and a data are stored by a NoSQL file cloud.
+                            </p>
+                            <ul class="screenshots single">
+                                <li>
+                                    <div class="screen">
+                                        <img src="img/lercards.jpg" alt="screen 1.">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="actions">
+                            <li><a class="colored" href='http://lercards.appspot.com'>Try the service</a></li>
+                        </ul>
+                    </div><!-- /pod -->
+
+                </div> <!-- /pods -->
+
+                <div class='foot'>
+                    tom.randus@gmail.com | <a href='http://www.linkedin.com/in/randus'>LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
