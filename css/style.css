@@ -113,8 +113,6 @@ html {
 body {
   font-family: "Conv_Gotham-Light", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  /*    background: #9acde2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAANqklEQ…fzWEFoPVW/J/NjSjomSWGHBnViDGwdVuX7HM3BLx0yGVP+Abekm5AbQE7CAAAAAElFTkSuQmCC);
-    background: #9acde2;*/
   -webkit-font-smoothing: antialiased;
 }
 .page-wrapper {
@@ -133,6 +131,7 @@ body {
 .page-wrapper .foot {
   clear: both;
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: right;
 }
 .page-wrapper .content {
@@ -145,6 +144,36 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(128, 128, 128, 0.9);
+}
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .page-wrapper {
+    width: auto;
+    margin: inherit;
+  }
+  .page-wrapper .head {
+    padding: 10px 5px 0;
+  }
+  .page-wrapper .head .lbl-name {
+    display: block;
+    text-align: center;
+  }
+  .page-wrapper .head .lbl-scope {
+    display: block;
+    padding-top: 10px;
+    color: #aaaaaa;
+    font-size: 80%;
+    text-align: center;
+  }
+  .page-wrapper .head .lbl-portfolio {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 200%;
+    float: none;
+  }
 }
 .pods .pod {
   width: 25%;
@@ -342,4 +371,14 @@ body {
 }
 .pods .pod.expanded .actions li a:hover {
   opacity: 0.8;
+}
+@media only screen and (max-width: 768px) {
+  .pods .pod {
+    width: 100%;
+    float: left;
+  }
+  .pods .pod.expanded {
+    width: auto;
+    max-width: 600px;
+  }
 }
