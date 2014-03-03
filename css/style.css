@@ -132,8 +132,11 @@ body {
 }
 .page-wrapper .foot {
   clear: both;
-  margin-top: 20px;
+  padding-top: 20px;
   text-align: right;
+}
+.page-wrapper .content {
+  margin: 29px 0 0;
 }
 .page-wrapper .content .shade {
   position: fixed;
