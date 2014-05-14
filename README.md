@@ -1,4 +1,1 @@
-Tom Randus
-==========
-
-[Portfolio](dizzyn.github.io)
+My [Portfolio](http://dizzyn.github.io)
