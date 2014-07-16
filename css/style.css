@@ -43,15 +43,7 @@ img {
 .clearfix:after {
   clear: both;
 }
-/*@bgColor1: #E43D19;
-@bgColor2: #0193CF;
-@bgColor3: #D0A92A;
-@bgColor4: #98DAFC;
-@bgColor5: #7EBB42;
-@bgColor6: #FA9101;
-@bgColor7: #404D56;
-
-
+/*
 81B3B2 mod
 4C4C4C sed
 D8D3BF zlut
@@ -176,7 +168,7 @@ body {
   }
 }
 .pods .pod {
-  width: 25%;
+  width: 33.333333333333336%;
   float: left;
 }
 .pods .pod.color-1 .colored {
@@ -198,6 +190,27 @@ body {
   background-color: #fa9101;
 }
 .pods .pod.color-7 .colored {
+  background-color: #404d56;
+}
+.pods .pod.color-8 .colored {
+  background-color: #378589;
+}
+.pods .pod.color-9 .colored {
+  background-color: #0193cf;
+}
+.pods .pod.color-10 .colored {
+  background-color: #d0a92a;
+}
+.pods .pod.color-11 .colored {
+  background-color: #98dafc;
+}
+.pods .pod.color-12 .colored {
+  background-color: #7ebb42;
+}
+.pods .pod.color-13 .colored {
+  background-color: #fa9101;
+}
+.pods .pod.color-14 .colored {
   background-color: #404d56;
 }
 .pods .pod .square {
