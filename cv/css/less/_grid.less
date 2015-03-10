@@ -1,0 +1,38 @@
+//
+// Simple grid model
+// -----------------
+//
+// class="span100" .......... 100% width
+// class="span25" ........... 25% width
+// class="span66" ........... 66.66% width
+// ... etc
+//
+// class="span100 well" ..... 100% width with 5px padding
+//
+//
+//  :)  Fell free to change/extend/replace/remove this file
+//
+//
+
+.span100,
+.span25, .span50, .span75,
+.span33, .span66 {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.span100 {width: 100%}
+.span25 {width: 25%}
+.span50 {width: 50%}
+.span75 {width: 75%}
+.span33 {width: 33.33%}
+.span66 {width: 66.66%}
+
+.well {
+    margin: 5px;
+    padding: 5px;
+    >p {
+       margin: 5px 0; 
+    }
+}

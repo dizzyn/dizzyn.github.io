@@ -101,71 +101,98 @@ D98873 oran*/
 html {
   background: white;
   color: black;
+  font-size: 21px;
 }
 body {
   font-family: "Conv_Gotham-Light", Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-size: 21px;
   -webkit-font-smoothing: antialiased;
+  color: black;
 }
-.page-wrapper {
-  width: 800px;
-  margin: 0px auto;
+a {
+  text-decoration: none;
 }
-.page-wrapper .head {
-  padding: 10px 5px 0;
+a:hover {
+  text-decoration: none;
+  border-bottom: 2px dotted black;
 }
-.page-wrapper .head .lbl-scope {
-  color: #aaaaaa;
+th,
+td {
+  line-height: 1.8;
 }
-.page-wrapper .head .lbl-portfolio {
-  float: right;
+th {
+  text-align: right;
+  color: #6ecdde;
+  padding-right: 5px;
 }
-.page-wrapper .foot {
-  clear: both;
-  padding-top: 20px;
-  padding-bottom: 20px;
+td,
+td a {
+  color: #b7b7b8;
+  border-color: #b7b7b8;
+}
+.page {
+  width: 920px;
+  margin: 0 auto;
+}
+.header {
+  padding: 25px 0 10px;
+  border-bottom: 3px solid black;
+}
+.header h1 {
+  font-size: 72px;
+  text-align: center;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+.header h2 {
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+  padding: 5px 0;
+  margin: 0;
+}
+h3 {
+  border-bottom: 2px solid black;
+}
+#education span,
+#objective span,
+#reference span,
+#reference a {
+  color: #b7b7b8;
+  border-color: #b7b7b8;
+}
+#experience .records {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#experience .records .dates {
+  float: left;
+  width: 20%;
+  font-size: 20px;
   text-align: right;
 }
-.page-wrapper .content {
-  margin: 29px 0 0;
+#experience .records .entry {
+  margin-left: 20%;
+  padding-left: 20px;
 }
-.page-wrapper .content .shade {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(128, 128, 128, 0.9);
+#experience .records .entry h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 5px;
 }
-@media only screen and (max-width: 768px) {
-  .hide-on-mobile {
-    display: none;
-  }
-  .page-wrapper {
-    width: auto;
-    margin: inherit;
-  }
-  .page-wrapper .head {
-    padding: 10px 5px 0;
-  }
-  .page-wrapper .head .lbl-name {
-    display: block;
-    text-align: center;
-  }
-  .page-wrapper .head .lbl-scope {
-    display: block;
-    padding-top: 10px;
-    color: #aaaaaa;
-    font-size: 80%;
-    text-align: center;
-  }
-  .page-wrapper .head .lbl-portfolio {
-    display: block;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 200%;
-    float: none;
-  }
+#experience .records .entry h5 {
+  font-size: 20px;
+  color: #6ecdde;
+  margin: 0 0 5px;
+}
+#experience .records .entry .desc {
+  font-size: 20px;
+  color: #b7b7b8;
+  margin: 0 0 25px;
+  display: block;
 }
 .pods .pod {
   width: 33.33333333%;
