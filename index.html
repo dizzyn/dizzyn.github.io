@@ -1,294 +1,81 @@
-﻿<html>
-    <head>
-        <title>tomas randus - portfolio</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Tom Randus &gt; Resume</title>
 
-        <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
 
-        <script src="js/jquery.js" type="text/javascript"></script>
-        <script>
-            $(function() {
-                $(".pod").click(function(e) {
-                    var $this = $(this);
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-                    $this.addClass("expanded");
-                    $(".shade").css("display", "block");
-                })
+    <link href="css/style.css" rel="stylesheet" />
 
-                $(".shade, .pod .btn-close").click(function(e) {
-                    $(".pod.expanded").removeClass("expanded");
-                    $(".shade").css("display", "none");
-                    e.stopPropagation();
-                });
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
 
-            });
-        </script>
+<body class="impress-not-supported">
 
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    </head>
-    <body>
+<div class="head">
+    <h1><span class='lbl-name'>tomas randus</span><span class='lbl-scope'><span class='hide-on-mobile'> &dash; </span>js / java / css</span> &dash; <span class="lbl-portfolio">portfolio</span></h1>
+</div>
 
-        <div class="page-wrapper page-wrapper-index">
-            <div class="head">
-                <h1><span class='lbl-name'>tomas randus</span><span class='lbl-scope'><span class='hide-on-mobile'> - </span>js / java / css developer</span> <span class="lbl-portfolio">portfolio</span></h1>
-            </div>
-            <div class="content">
-                <div class="shade" style='display: none'></div>
-                <div class="pods">
 
-                    <div class="pod color-8">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>Hnojiva.org</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Enviromental Marketing Site</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                It's a simple responsive site. I have created HTML, CSS and also the design. 
-                            </p>
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/hnojiva.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="actions">
-                            <li><a class="colored" target='_blank' href='http://hnojiva.org'>Visit the site</a></li>
-                        </ul>
-                    </div><!-- /pod -->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
 
-                    <div class="pod color-7">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>CityRoads.eu</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Company Website</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                I have created the company site and a mobile game engine.
-                            </p>
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/cityroads.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="actions">
-                            <li><a class="colored" target='_blank' href='http://cityroads.eu'>See the site</a></li>
-                        </ul>
-                    </div><!-- /pod -->
-                    
-                    <div class="pod color-6">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>JS Countdown</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Client-server Countdown</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                It's a simple tool for multi screen countdown for your conference
-                            </p>
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/countdown.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="actions">
-                            <li><a class="colored" target='_blank' href='https://github.com/dizzyn/js-contdown'>See the project page</a></li>
-                        </ul>
-                    </div><!-- /pod -->
+<div id="impress">
 
-                    <div class="pod color-5">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>Kamašne</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Kamašne - Music Band Website</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                It's a simple responsive website created for my friends.
-                            </p>
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/kamasne.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="actions">
-                            <li><a class="colored" target='_blank' href='http://kamasne.cz'>Enjoy the site</a></li>
-                        </ul>
-                    </div><!-- /pod -->
+Mapa
+Infinit
+Ignition
+RFE
+Piano
+Websites
 
-                    <div class="pod color-4">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>Ignition</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Ignition CSS/LESS Methodics</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            This package helps companies to adopt a clean <a href='http://lesscss.org/'>LESS</a> based development. The package contains:
-                            <ul class='attrs'>
-                                <li>Introdution - what is the LESS, what is the package itself</li>
-                                <li>New project wizard</li>
-                                <li>7 Coding rules</li>
-                                <li>Initial code package (the framework)</li>
-                            </ul>
-                        </div>
-                        <ul class="actions">
-                            <li><a class="colored" target='_blank' href='./files/ignition/Ignition-Styling-Guide.pptx'>Download the <span class='ptt'>PTT</span> presentation</a></li>
-                            <li><a class="colored" target='_blank' href='./files/ignition/Ignition-Styling-Guide.pptx'>Check out the library sources</a></li>
-                        </ul>
-                    </div><!-- /pod -->
-
-                    <div class="pod color-3">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>Pay by SMS</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>SMS micro-payment solution</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                I have invented and developed an open SMS gateway for longtail market. It's a JAVA EE based transactional system.
-                            </p>
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/platby.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-                            <p>
-                                My contribution was: <span class='contrib'>JAVA development</span>, <span class='contrib'>Product management</span>, <span class='contrib'>Processes</span>, <span class='contrib'>Marketing</span>
-                            </p>
-                        </div>
-                        <ul class="actions">
-                            <li><a class="colored" target='_blank' href='http://mobilniplatby.cz'>Checkout the service online</a></li>
-                        </ul>
-                    </div><!-- /pod -->
-
-                    <div class="pod color-2">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>Wirenode</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Wirenode - Mobile Website Composer</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                The service is based on flexible J2EE CMS with a device recognition engine. There are <b>139.559</b> websites built by the platform.   
-                            </p>
-
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/wirenode.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <p>
-                                My contribution was: <span class='contrib'>JS development</span>, <span class='contrib'>Product management</span>, <span class='contrib'>Marketing activities</span>
-                            </p>
-                        </div>
-                        <ul class="actions">
-                            <li><a  class="colored" target='_blank' href='http://wirenode.com'>Checkout the service online</a></li>
-                            <li><a  class="colored" target='_blank' href='http://techcrunch.com/search/wirenode#stq=wirenode&stp=1'>See the refernces on TechCrunch</a></li>
-                        </ul>
-                    </div><!-- /pod -->
-
-                    <div class="pod color-1">
-                        <div class="thumbnail square colored">
-                            <div class="title">
-                                <h3>Infinite Scroll</h3>
-                            </div>
-                        </div>
-                        <div class="thumbnail modal-header colored">
-                            <span class="btn-close">x</span>
-                            <div class="title">
-                                <h3>Infinite scroll open-source library</h3>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                It's a GNU/GPL  Javascript library based on <a href='http://backbonejs.org/'>BackboneJS MVC framework</a>. The libabry provide a functionality of infinite content loading. It's inspired by the Pinterest boards. 
-                            </p>
-
-                            <ul class="screenshots single">
-                                <li>
-                                    <div class="screen">
-                                        <img src="img/infinite.jpg" alt="screen 1.">
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <p>
-                                Check the demo and the source-code:
-                            </p>
-
-                        </div>
-                        <ul class="actions">
-                            <li><a target='_blank' href='http://demoinfinite.appspot.com/' class="colored">See the live demo</a></li>
-                            <li><a target='_blank' href='https://github.com/dizzyn/backbone-infinite-scroll' class="colored">See the repository on GitHub</a></li>
-                        </ul>
-                    </div><!-- /pod -->
-                    
-                </div> <!-- /pods -->
-
-                <div class='foot'>
-                    tom.randus@gmail.com | <a href='http://www.linkedin.com/in/randus'>LinkedIn</a>
-                </div>
-            </div>
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <h2>Innovation Barometter</h2>
+        <h3>Infograhics</h3>
+        <div class="images count2">
+          <a href="http://dizzyn.github.io/test-map/distr-en.html"><img src="img/map.png" alt=""/></a>
+          <a href="http://dizzyn.github.io/test-map/distr-en.html"><img src="img/map2.png" alt=""/></a>
         </div>
-    </body>
+        <div class="desc">
+          As a <span class="role">forontend developer</span> I have developped an interactive infographics of the <a class="product" href="http://dizzyn.github.io/test-map/distr-en.html">ERSTE Innovation Barometter</a>. Key technologies: <span class="tech">SVG</span>, <span class="tech">LESS</span>, <span class="tech">Javascript</span>.
+          </div>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    </div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500"  data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
 </html>

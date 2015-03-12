@@ -8,75 +8,145 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.page-wrapper {
-    width: 800px;
-    margin: 0px auto;
+.head {
+  padding: 10px 20px;
+}
 
-    .head {
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
 
-        padding: 10px 5px 0;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
 
-        .lbl-scope {
-            color: @gray;
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+/*
+    Now let's style the presentation steps.
+
+    We start with basics to make sure it displays correctly in everywhere ...
+*/
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 12px;
+    line-height: 1.5;
+
+    border: 1px solid red;
+
+    h2 {}
+
+    h3 {}
+
+    .images {
+      a {
+        img {
+            width: 128px;
         }
+      }
+      .count2 {
 
-        .lbl-portfolio {
-            float: right;
-        }
-
+      }
     }
 
-    .foot {
-        clear: both;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: right;
-    }
+    .desc {
+      .role {
 
-    .content {
-        margin: 29px 0 0;
-        .shade {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            .background-opacity(gray, 0.9);
-        }
+      }
+      .product {
+
+      }
+      .tech {
+
+      }
     }
 }
 
-@media only screen and (max-width : 768px) {
-    .hide-on-mobile {
-        display: none;
-    }
-    
-    .page-wrapper {
-        width: auto;
-        margin: inherit;
 
-        .head {
-            padding: 10px 5px 0;
-            .lbl-name {
-                display: block;
-                text-align: center;
-            }
+.hint {
+    display: none;
 
-            .lbl-scope {
-                display: block;
-                padding-top: 10px;
-                color: @gray;
-                font-size: 80%;
-                text-align: center;
-            }
+    position: fixed;
+    left: 0;
+    bottom: 0;
 
-            .lbl-portfolio {
-                display: block;
-                text-align: center;
-                padding-top: 10px;
-                font-size: 200%;
-                float: none;
-            }
-        }    
-    }
+    color: #bbb;
+
+    font-size: 25px;
+    padding: 10px 20px;
+
+    z-index: 100;
+
+    opacity: 0;
+
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+/*
+    Now we 'enable' the hint when presentation is initialized ...
+*/
+.impress-enabled .hint { display: block }
+
+/*
+    ... and we will show it when the first step (with id 'bored') is active.
+*/
+.impress-on-bored .hint {
+    /*
+        We remove the transparency and position the hint in its default fixed
+        position.
+    */
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    /*
+        Now for fade in transition we have the oposite situation from the one
+        above.
+
+        First after 4.5s delay we animate the transform property to move the hint
+        into its correct position and after that we fade it in with opacity
+        transition.
+    */
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
 }

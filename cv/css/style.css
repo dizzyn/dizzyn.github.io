@@ -110,6 +110,9 @@ body {
   -webkit-font-smoothing: antialiased;
   color: black;
 }
+.clear {
+  clear: both;
+}
 a {
   text-decoration: none;
 }
