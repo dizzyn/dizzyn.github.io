@@ -99,7 +99,7 @@ D98873 oran*/
   margin: 5px 0;
 }
 html {
-  background: white;
+  background: #0074a4;
   color: black;
 }
 body {
@@ -108,7 +108,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .head {
-  padding: 10px 20px;
+  padding: 0px 20px;
+  color: #64C4EC;
+}
+.head span {
+  color: #64C4EC;
 }
 .fallback-message {
   font-family: sans-serif;
@@ -126,35 +130,76 @@ body {
 .impress-supported .fallback-message {
   display: none;
 }
-/*
-    Now let's style the presentation steps.
-
-    We start with basics to make sure it displays correctly in everywhere ...
-*/
 .step {
   position: relative;
-  width: 900px;
-  padding: 40px;
+  width: 800px;
+  height: 600px;
+  padding: 30px 40px;
   margin: 20px auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'PT Serif', georgia, serif;
   font-size: 12px;
   line-height: 1.5;
-  border: 1px solid red;
+  border-radius: 5px;
 }
-.step .images a img {
-  width: 128px;
+.step h2 {
+  color: white;
+  font-size: 24px;
+  line-height: 1;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.step h3 {
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0 0 20px 0;
+}
+.step .images .border {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  border: 1px solid #64C4EC;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  max-height: 360px;
+  overflow: hidden;
+}
+.step .images .border img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+.step .desc {
+  font-size: 18px;
+  color: white;
+}
+.step .desc a {
+  color: white;
+}
+.step.call-me {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.step.call-me a {
+  color: white;
+}
+.step.call-me h2 {
+  margin-top: 200px;
+  text-align: center;
 }
 .hint {
   display: none;
   position: fixed;
   left: 0;
   bottom: 0;
-  color: #bbb;
+  color: #64C4EC;
   font-size: 25px;
   padding: 10px 20px;
   z-index: 100;
@@ -256,7 +301,7 @@ body {
   height: 140px;
 }
 .pods .pod .square .title h3 {
-  color: white;
+  color: #0074a4;
   line-height: 140px;
   text-align: center;
   margin: 0;
@@ -342,7 +387,7 @@ body {
   margin: 0;
   line-height: 40px;
   display: inline;
-  color: white;
+  color: #0074a4;
 }
 .pods .pod.expanded .screenshots {
   margin: 20px 10px;
@@ -412,7 +457,7 @@ body {
   clear: both;
 }
 .pods .pod.expanded .actions li a {
-  color: white;
+  color: #0074a4;
   text-decoration: none;
   padding: 10px 10px;
   margin: 3px;

@@ -101,7 +101,7 @@ D98873 oran*/
 html {
   background: white;
   color: black;
-  font-size: 21px;
+  font-size: 19px;
 }
 body {
   font-family: "Conv_Gotham-Light", Arial, Helvetica, sans-serif;
@@ -109,9 +109,50 @@ body {
   font-size: 21px;
   -webkit-font-smoothing: antialiased;
   color: black;
+  min-height: 740px;
 }
 .clear {
   clear: both;
+}
+.progress {
+  background: #dedede;
+  border: 1px solid #dedede;
+  width: 150px;
+  height: 20px;
+  margin: 10px 10px 5px;
+  display: block;
+  position: relative;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+.progress:before {
+  display: block;
+  content: "";
+  background: #6ecdde;
+  border: 1px solid #6ecdde;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+}
+.progress.percent-90:before {
+  right: 10%;
+}
+.progress.percent-80:before {
+  right: 20%;
+}
+.progress.percent-70:before {
+  right: 30%;
+}
+.progress.percent-60:before {
+  right: 40%;
+}
+.progress.percent-50:before {
+  right: 50%;
+}
+.progress.percent-10:before {
+  right: 90%;
 }
 a {
   text-decoration: none;
@@ -158,6 +199,8 @@ td a {
 }
 h3 {
   border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
 }
 #education span,
 #objective span,
@@ -166,15 +209,19 @@ h3 {
   color: #b7b7b8;
   border-color: #b7b7b8;
 }
+#experience h3 {
+  margin-right: 20px;
+}
 #experience .records {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-right: 20px;
 }
 #experience .records .dates {
   float: left;
   width: 20%;
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
 }
 #experience .records .entry {
@@ -185,6 +232,7 @@ h3 {
   font-size: 20px;
   text-transform: uppercase;
   margin: 0 0 5px;
+  padding-top: 4px;
 }
 #experience .records .entry h5 {
   font-size: 20px;
@@ -192,10 +240,34 @@ h3 {
   margin: 0 0 5px;
 }
 #experience .records .entry .desc {
-  font-size: 20px;
+  font-size: 18px;
   color: #b7b7b8;
   margin: 0 0 25px;
   display: block;
+}
+#skills td,
+#skills th {
+  font-size: 14px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+#skills td.desc,
+#skills th.desc {
+  padding-top: 8px;
+  line-height: 1.3;
+}
+#skills th {
+  white-space: nowrap;
+  padding-top: 5px;
+}
+#banner {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #6ecdde;
+}
+#banner a {
+  color: #6ecdde;
 }
 .pods .pod {
   width: 33.33333333%;

@@ -9,7 +9,11 @@ body {
 }
 
 .head {
-  padding: 10px 20px;
+  padding: 0px 20px;
+  color: #64C4EC;
+  span {
+    color: #64C4EC;
+  }
 }
 
 .fallback-message {
@@ -33,16 +37,11 @@ body {
     display: none;
 }
 
-/*
-    Now let's style the presentation steps.
-
-    We start with basics to make sure it displays correctly in everywhere ...
-*/
-
 .step {
     position: relative;
-    width: 900px;
-    padding: 40px;
+    width: 800px;
+    height: 600px;
+    padding: 30px 40px;
     margin: 20px auto;
 
     -webkit-box-sizing: border-box;
@@ -51,21 +50,47 @@ body {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
     font-size: 12px;
     line-height: 1.5;
 
-    border: 1px solid red;
+    border-radius: 5px;
 
-    h2 {}
+    h2 {
+      color: white;
+      font-size: 24px;
+      line-height: 1;
+      padding: 0;
+      margin: 0 0 10px 0;
+    }
 
-    h3 {}
+    h3 {
+      color: white;
+      font-size: 14px;
+      line-height: 1;
+      margin: 0 0 20px 0;
+    }
 
     .images {
-      a {
+      .border {
+        display: block;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        border: 1px solid #64C4EC;
+        border-radius: 4px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out;
+        max-height: 360px;
+        overflow: hidden;
+
         img {
-            width: 128px;
+            width: 100%;
+            display: block;
+            max-width: 100%;
         }
+      }
+      .count {
+
       }
       .count2 {
 
@@ -73,6 +98,11 @@ body {
     }
 
     .desc {
+      font-size: 18px;
+      color: white;
+      a {
+        color: white;
+      }
       .role {
 
       }
@@ -85,6 +115,18 @@ body {
     }
 }
 
+.step.call-me {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  a {
+    color: white;    
+  }
+  h2 {
+    margin-top: 200px;
+    text-align: center;
+  }
+}
 
 .hint {
     display: none;
@@ -93,7 +135,7 @@ body {
     left: 0;
     bottom: 0;
 
-    color: #bbb;
+    color: #64C4EC;
 
     font-size: 25px;
     padding: 10px 20px;
