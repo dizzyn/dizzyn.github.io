@@ -1,204 +1,262 @@
+@border-dark-color: black;
+@special-color: #6ecdde;
+@text-color: black;
+@gray-text-color: #999;
+
 html {
-    background: @backgroundColor;
-    color: @black;
+  background: @backgroundColor;
+  color: @black;
+  font-size: 19px;
 }
-
 body {
-    .font-light(14px);
-    -webkit-font-smoothing: antialiased;
+  .font-light(14px);
+  font-size: 21px;
+  -webkit-font-smoothing: antialiased;
+  color: @text-color;
+  min-height: 740px;
 }
 
-.head {
-  padding: 0px 20px;
-  color: #64C4EC;
-  span {
-    color: #64C4EC;
+//
+.clear {
+    clear: both;
+}
+
+//progress bar
+.progress {
+  background: lighten(@gray-text-color, 15%);
+  border: 1px solid lighten(@gray-text-color, 15%);
+  width: 150px;
+  height: 20px;
+  margin: 10px 10px 5px;
+  display: block;
+  position: relative;
+  text-indent: -1000px;
+  overflow: hidden;
+  &:before {
+    display: block;
+    content: "";
+    background: @special-color;
+    border: 1px solid @special-color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+  }
+  &.percent-90 {
+    &:before {
+      right: 10%;
+    }
+  }
+  &.percent-80 {
+    &:before {
+      right: 20%;
+    }
+  }
+  &.percent-70 {
+    &:before {
+      right: 30%;
+    }
+  }
+  &.percent-60 {
+    &:before {
+      right: 40%;
+    }
+  }
+  &.percent-50 {
+    &:before {
+      right: 50%;
+    }
+  }
+  &.percent-10 {
+    &:before {
+      right: 90%;
+    }
   }
 }
 
-.fallback-message {
-    font-family: sans-serif;
-    line-height: 1.3;
-
-    width: 780px;
-    padding: 10px 10px 0;
-    margin: 20px auto;
-
-    border: 1px solid #E4C652;
-    border-radius: 10px;
-    background: #EEDC94;
+//Links
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 2px dotted @text-color;
+  }
 }
 
-.fallback-message p {
-    margin-bottom: 10px;
+//Table
+th, td {
+  line-height: 1.8;
+}
+th {
+  text-align: right;
+  color: @special-color;
+  padding-right: 5px;
+}
+td, td a {
+  color: @gray-text-color;
+  border-color: @gray-text-color;
 }
 
-.impress-supported .fallback-message {
-    display: none;
+// Page
+.page {
+  width: 920px;
+  margin: 0 auto;
 }
 
-.step {
-    position: relative;
-    width: 800px;
-    height: 600px;
-    padding: 30px 40px;
-    margin: 20px auto;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    -o-box-sizing:      border-box;
-    box-sizing:         border-box;
-
-    font-size: 12px;
-    line-height: 1.5;
-
-    border-radius: 5px;
-
-    h2 {
-      color: white;
-      font-size: 24px;
-      line-height: 1;
-      padding: 0;
-      margin: 0 0 10px 0;
-    }
-
-    h3 {
-      color: white;
-      font-size: 14px;
-      line-height: 1;
-      margin: 0 0 20px 0;
-    }
-
-    .images {
-      .border {
-        display: block;
-        margin-bottom: 20px;
-        line-height: 1.42857143;
-        border: 1px solid #64C4EC;
-        border-radius: 4px;
-        -webkit-transition: border .2s ease-in-out;
-        -o-transition: border .2s ease-in-out;
-        transition: border .2s ease-in-out;
-        max-height: 360px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            display: block;
-            max-width: 100%;
-        }
-      }
-      .count {
-
-      }
-      .count2 {
-
-      }
-    }
-
-    .desc {
-      font-size: 18px;
-      color: white;
-      a {
-        color: white;
-      }
-      .role {
-
-      }
-      .product {
-
-      }
-      .tech {
-
-      }
-    }
-}
-
-.step.call-me {
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  a {
-    color: white;
+.header {
+  padding: 25px 0 10px;
+  border-bottom: 3px solid @border-dark-color;
+  h1 {
+    font-size: 72px;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
   }
   h2 {
-    margin-top: 200px;
+    font-size: 26px;
     text-align: center;
+    font-style: italic;
+    padding: 5px 0;
+    margin: 0;
+  }
+  .right {
+    th, td {
+
+    }
+    th {
+
+    }
+    td, td a {
+
+    }
   }
 }
 
-.hint {
-    display: none;
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
-    color: #64C4EC;
-
-    font-size: 25px;
-    padding: 10px 20px;
-
-    z-index: 100;
-
-    opacity: 0;
-
-    -webkit-transform: translateY(400px);
-    -moz-transform:    translateY(400px);
-    -ms-transform:     translateY(400px);
-    -o-transform:      translateY(400px);
-    transform:         translateY(400px);
-
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
-    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
-    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
+h3 {
+  border-bottom: 2px solid @border-dark-color;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
 }
 
-/*
-    Now we 'enable' the hint when presentation is initialized ...
-*/
-.impress-enabled .hint { display: block }
-
-/*
-    ... and we will show it when the first step (with id 'bored') is active.
-*/
-.impress-on-bored .hint {
-    /*
-        We remove the transparency and position the hint in its default fixed
-        position.
-    */
-    opacity: 1;
-
-    -webkit-transform: translateY(0px);
-    -moz-transform:    translateY(0px);
-    -ms-transform:     translateY(0px);
-    -o-transform:      translateY(0px);
-    transform:         translateY(0px);
-
-    /*
-        Now for fade in transition we have the oposite situation from the one
-        above.
-
-        First after 4.5s delay we animate the transform property to move the hint
-        into its correct position and after that we fade it in with opacity
-        transition.
-    */
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+#education span,
+#objective span,
+#reference span,
+#reference a {
+  color: @gray-text-color;
+  border-color: @gray-text-color;
 }
 
+#education, #reference {
+  font-size: 18px;
+}
 
-// @media print {
-//   .step {
-//       position: initial !important;
-//       transform: initial !important;
-//       transform-style: initial !important;
-//       .clearfix();
-//   }
-// }
+#experience {
+  h3 {
+    margin-right: 20px;
+  }
+  .records {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+
+    .dates {
+      float: left;
+      width: 20%;
+      font-size: 18px;
+      text-align: right;
+    }
+
+    .entry {
+      margin-left: 20%;
+      //border-left: 2px solid @border-dark-color;
+      padding-left: 20px;
+      h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 0 5px;
+        padding-top: 4px;
+      }
+      h5 {
+        font-size: 20px;
+        color: @special-color;
+        margin: 0 0 5px;
+      }
+      .desc {
+        font-size: 14px;
+        line-height: 1.3;
+        color: @gray-text-color;
+        margin: 0 0 15px;
+        display: block;
+        p {
+          margin: 8px 0;
+          &.small {
+            font-size: 11px;
+          }
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            list-style-position: inside;
+            list-style-type: disc;
+            font-size: 14px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}
+
+#skills {
+  > ul {
+    margin: 0;
+    padding: 0;
+    > li {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      padding-bottom: 5px;
+      vertical-align: middle;
+      list-style-type: none;
+      h4 {
+        margin: 15px 0 10px;
+        font-size: 20px;
+        color: @special-color;
+      }
+      p {
+        margin: 5px 0;
+        font-size: 18px;
+        padding: 6px 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          margin: 5px 0 7px;
+          line-height: 1.3;
+          color: @gray-text-color;
+          strong {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+#banner {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: @special-color;
+  a {
+    color: @special-color;
+  }
+}

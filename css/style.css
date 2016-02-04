@@ -99,381 +99,216 @@ D98873 oran*/
   margin: 5px 0;
 }
 html {
-  background: #0074a4;
+  background: white;
   color: black;
+  font-size: 19px;
 }
 body {
   font-family: "Conv_Gotham-Light", Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-size: 21px;
   -webkit-font-smoothing: antialiased;
+  color: black;
+  min-height: 740px;
 }
-.head {
-  padding: 0px 20px;
-  color: #64C4EC;
-}
-.head span {
-  color: #64C4EC;
-}
-.fallback-message {
-  font-family: sans-serif;
-  line-height: 1.3;
-  width: 780px;
-  padding: 10px 10px 0;
-  margin: 20px auto;
-  border: 1px solid #E4C652;
-  border-radius: 10px;
-  background: #EEDC94;
-}
-.fallback-message p {
-  margin-bottom: 10px;
-}
-.impress-supported .fallback-message {
-  display: none;
-}
-.step {
-  position: relative;
-  width: 800px;
-  height: 600px;
-  padding: 30px 40px;
-  margin: 20px auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 5px;
-}
-.step h2 {
-  color: white;
-  font-size: 24px;
-  line-height: 1;
-  padding: 0;
-  margin: 0 0 10px 0;
-}
-.step h3 {
-  color: white;
-  font-size: 14px;
-  line-height: 1;
-  margin: 0 0 20px 0;
-}
-.step .images .border {
-  display: block;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  border: 1px solid #64C4EC;
-  border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
-  max-height: 360px;
-  overflow: hidden;
-}
-.step .images .border img {
-  width: 100%;
-  display: block;
-  max-width: 100%;
-}
-.step .desc {
-  font-size: 18px;
-  color: white;
-}
-.step .desc a {
-  color: white;
-}
-.step.call-me {
-  text-align: center;
-  font-size: 18px;
-  color: white;
-}
-.step.call-me a {
-  color: white;
-}
-.step.call-me h2 {
-  margin-top: 200px;
-  text-align: center;
-}
-.hint {
-  display: none;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  color: #64C4EC;
-  font-size: 25px;
-  padding: 10px 20px;
-  z-index: 100;
-  opacity: 0;
-  -webkit-transform: translateY(400px);
-  -moz-transform: translateY(400px);
-  -ms-transform: translateY(400px);
-  -o-transform: translateY(400px);
-  transform: translateY(400px);
-  -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-  -moz-transition: opacity 1s, -moz-transform 0.5s 1s;
-  -ms-transition: opacity 1s, -ms-transform 0.5s 1s;
-  -o-transition: opacity 1s, -o-transform 0.5s 1s;
-  transition: opacity 1s,         transform 0.5s 1s;
-}
-/*
-    Now we 'enable' the hint when presentation is initialized ...
-*/
-.impress-enabled .hint {
-  display: block;
-}
-/*
-    ... and we will show it when the first step (with id 'bored') is active.
-*/
-.impress-on-bored .hint {
-  /*
-        We remove the transparency and position the hint in its default fixed
-        position.
-    */
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  transform: translateY(0px);
-  /*
-        Now for fade in transition we have the oposite situation from the one
-        above.
-
-        First after 4.5s delay we animate the transform property to move the hint
-        into its correct position and after that we fade it in with opacity
-        transition.
-    */
-  -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-  -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
-  -ms-transition: opacity 1s 5s, -ms-transform 0.5s 4.5s;
-  -o-transition: opacity 1s 5s, -o-transform 0.5s 4.5s;
-  transition: opacity 1s 5s,         transform 0.5s 4.5s;
-}
-.pods .pod {
-  width: 33.33333333%;
-  float: left;
-}
-.pods .pod.color-1 .colored {
-  background-color: #d98873;
-}
-.pods .pod.color-2 .colored {
-  background-color: #0193cf;
-}
-.pods .pod.color-3 .colored {
-  background-color: #d0a92a;
-}
-.pods .pod.color-4 .colored {
-  background-color: #d34726;
-}
-.pods .pod.color-5 .colored {
-  background-color: #7ebb42;
-}
-.pods .pod.color-6 .colored {
-  background-color: #fa9101;
-}
-.pods .pod.color-7 .colored {
-  background-color: #404d56;
-}
-.pods .pod.color-8 .colored {
-  background-color: #378589;
-}
-.pods .pod.color-9 .colored {
-  background-color: #0193cf;
-}
-.pods .pod.color-10 .colored {
-  background-color: #d0a92a;
-}
-.pods .pod.color-11 .colored {
-  background-color: #98dafc;
-}
-.pods .pod.color-12 .colored {
-  background-color: #7ebb42;
-}
-.pods .pod.color-13 .colored {
-  background-color: #fa9101;
-}
-.pods .pod.color-14 .colored {
-  background-color: #404d56;
-}
-.pods .pod .square {
-  cursor: pointer;
-  margin: 4px;
-  height: 140px;
-}
-.pods .pod .square .title h3 {
-  color: #0074a4;
-  line-height: 140px;
-  text-align: center;
-  margin: 0;
-}
-.pods .pod .square img {
-  width: 100%;
-}
-.pods .pod .square:hover {
-  opacity: 0.7;
-}
-.pods .pod .modal-header,
-.pods .pod .description,
-.pods .pod .actions,
-.pods .pod .tags {
-  display: none;
-}
-.pods .pod.expanded {
-  display: block;
-  position: fixed;
-  width: 600px;
-  left: 50%;
-  top: 50px;
-  margin-left: -300px;
-  background: white;
-  -webkit-box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.6);
-}
-.pods .pod.expanded .square {
-  display: none;
-}
-.pods .pod.expanded .modal-header,
-.pods .pod.expanded .description,
-.pods .pod.expanded .actions,
-.pods .pod.expanded .tags {
-  display: block;
-}
-.pods .pod.expanded .tags {
-  display: none;
-  margin: 0;
-  padding: 2px;
-}
-.pods .pod.expanded .tags li {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 3px 6px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-.pods .pod.expanded .modal-header {
-  position: relative;
-}
-.pods .pod.expanded .modal-header .btn-close {
-  cursor: pointer;
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: block;
-  text-indent: 3000px;
-  line-height: 3000px;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGpJREFUeNpiYIAAAyBeD8QCDLiBAFSNAQOSpvdA/B+Iz+PQLACV+w9VC9a8HirwH4dmZE0wvB6XBEwzPjkGfJrPE3ANTs0ENRHSjKGJiYEKgCynkhU4ZEcH2QmA7CQH07yfiES+H6YJIMAAhJZcwZLuGCIAAAAASUVORK5CYII=);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-position: center center;
-}
-.pods .pod.expanded .modal-header .btn-close:hover {
-  background-color: #ffffff;
-}
-.pods .pod.expanded .modal-header .title {
-  padding: 0 0 0 4px;
-  font-family: "Conv_Gotham-Light", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
-.pods .pod.expanded .modal-header .title h3 {
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 40px;
-  display: inline;
-  color: #0074a4;
-}
-.pods .pod.expanded .screenshots {
-  margin: 20px 10px;
-  padding: 0;
-  *zoom: 1;
-  text-align: center;
-}
-.pods .pod.expanded .screenshots:before,
-.pods .pod.expanded .screenshots:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.pods .pod.expanded .screenshots:after {
+.clear {
   clear: both;
 }
-.pods .pod.expanded .screenshots li {
-  display: inline-block;
-  width: 45.0%;
+.progress {
+  background: #bfbfbf;
+  border: 1px solid #bfbfbf;
+  width: 150px;
+  height: 20px;
+  margin: 10px 10px 5px;
+  display: block;
+  position: relative;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+.progress:before {
+  display: block;
+  content: "";
+  background: #6ecdde;
+  border: 1px solid #6ecdde;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+}
+.progress.percent-90:before {
+  right: 10%;
+}
+.progress.percent-80:before {
+  right: 20%;
+}
+.progress.percent-70:before {
+  right: 30%;
+}
+.progress.percent-60:before {
+  right: 40%;
+}
+.progress.percent-50:before {
+  right: 50%;
+}
+.progress.percent-10:before {
+  right: 90%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: 2px dotted black;
+}
+th,
+td {
+  line-height: 1.8;
+}
+th {
+  text-align: right;
+  color: #6ecdde;
+  padding-right: 5px;
+}
+td,
+td a {
+  color: #999999;
+  border-color: #999999;
+}
+.page {
+  width: 920px;
+  margin: 0 auto;
+}
+.header {
+  padding: 25px 0 10px;
+  border-bottom: 3px solid black;
+}
+.header h1 {
+  font-size: 72px;
+  text-align: center;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+.header h2 {
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+  padding: 5px 0;
+  margin: 0;
+}
+h3 {
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+#education span,
+#objective span,
+#reference span,
+#reference a {
+  color: #999999;
+  border-color: #999999;
+}
+#education,
+#reference {
+  font-size: 18px;
+}
+#experience h3 {
+  margin-right: 20px;
+}
+#experience .records {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+#experience .records .dates {
+  float: left;
+  width: 20%;
+  font-size: 18px;
+  text-align: right;
+}
+#experience .records .entry {
+  margin-left: 20%;
+  padding-left: 20px;
+}
+#experience .records .entry h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  padding-top: 4px;
+}
+#experience .records .entry h5 {
+  font-size: 20px;
+  color: #6ecdde;
+  margin: 0 0 5px;
+}
+#experience .records .entry .desc {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #999999;
+  margin: 0 0 15px;
+  display: block;
+}
+#experience .records .entry .desc p {
+  margin: 8px 0;
+}
+#experience .records .entry .desc p.small {
+  font-size: 11px;
+}
+#experience .records .entry .desc ul {
   margin: 0;
   padding: 0;
 }
-.pods .pod.expanded .screenshots li .screen {
-  padding: 0 10px;
+#experience .records .entry .desc ul li {
+  list-style-position: inside;
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 1.3;
 }
-.pods .pod.expanded .screenshots li .screen img {
-  width: 100%;
-  padding: 6px;
-  -webkit-box-shadow: 0px 0 3px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0 3px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0 3px 0 rgba(0, 0, 0, 0.3);
+#skills > ul {
+  margin: 0;
+  padding: 0;
 }
-.pods .pod.expanded .screenshots.single li {
-  width: 80.0%;
+#skills > ul > li {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+  list-style-type: none;
 }
-.pods .pod.expanded .description {
-  margin: 20px 20px;
+#skills > ul > li h4 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #6ecdde;
 }
-.pods .pod.expanded .description .ptt {
-  background: #D34726;
-  color: white;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  padding: 2px;
+#skills > ul > li p {
+  margin: 5px 0;
+  font-size: 18px;
+  padding: 6px 0;
 }
-.pods .pod.expanded .description .contrib {
-  background: ivory;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  padding: 2px;
+#skills > ul > li ul {
+  margin: 0;
+  padding: 0;
 }
-.pods .pod.expanded .actions {
-  margin: 10px 5px 5px;
+#skills > ul > li ul li {
+  margin: 0;
   padding: 0;
   list-style-type: none;
-  *zoom: 1;
+  margin: 5px 0 7px;
+  line-height: 1.3;
+  color: #999999;
 }
-.pods .pod.expanded .actions:before,
-.pods .pod.expanded .actions:after {
-  display: table;
-  content: "";
-  line-height: 0;
+#skills > ul > li ul li strong {
+  color: black;
 }
-.pods .pod.expanded .actions:after {
-  clear: both;
+#banner {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #6ecdde;
 }
-.pods .pod.expanded .actions li a {
-  color: #0074a4;
-  text-decoration: none;
-  padding: 10px 10px;
-  margin: 3px;
-  display: block;
-  float: right;
-}
-.pods .pod.expanded .actions li a:hover {
-  opacity: 0.8;
-}
-@media only screen and (max-width: 768px) {
-  .pods .pod {
-    width: 100%;
-    float: left;
-  }
-  .pods .pod.expanded {
-    width: auto;
-    max-width: 600px;
-  }
+#banner a {
+  color: #6ecdde;
 }
