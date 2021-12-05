@@ -1,16 +1,16 @@
 {
-  "name": "BauGruppe",
+  "name": "CV",
   "version": "1.0.0",
   "description": "website",
   "main": "gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn grunt"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt": "^1.4.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
