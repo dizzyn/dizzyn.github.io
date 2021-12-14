@@ -3,6 +3,20 @@
 @text-color: black;
 @gray-text-color: #999;
 
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+.pdf {
+  color: @gray;
+  text-align: left;
+  a {
+    color: @gray;
+  }
+}
+
 html {
   background: @backgroundColor;
   color: @black;

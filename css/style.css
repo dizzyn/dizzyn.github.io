@@ -98,6 +98,18 @@ D98873 oran*/
 .well > p {
   margin: 5px 0;
 }
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+.pdf {
+  color: #aaa;
+  text-align: left;
+}
+.pdf a {
+  color: #aaa;
+}
 html {
   background: white;
   color: black;
