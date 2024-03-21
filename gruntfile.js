@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     less: {
@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       cv: {
         files: {
-          'cv/css/style.css': 'cv/css/style.less'
+          'css/style.css': 'css/style.less'
         }
       }
     },
