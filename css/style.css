@@ -225,6 +225,19 @@ h3 {
 #reference {
   font-size: 18px;
 }
+#membership ul {
+  margin: 0;
+  padding: 0;
+}
+#membership ul li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+}
 #experience h3 {
   margin-right: 20px;
 }
@@ -238,7 +251,7 @@ h3 {
   float: left;
   width: 20%;
   font-size: 18px;
-  text-align: right;
+  text-align: left;
   margin-top: 4px;
 }
 #experience .records .entry {
