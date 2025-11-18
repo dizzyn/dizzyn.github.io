@@ -4,8 +4,8 @@
   "description": "website",
   "main": "gruntfile.js",
   "scripts": {
-    "build": "yarn grunt",
-    "watch": "yarn grunt watch"
+    "build": "grunt",
+    "watch": "grunt watch"
   },
   "author": "",
   "license": "ISC",
