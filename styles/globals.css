@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font faces */
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Light.eot");
+  src: url("/fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Light.woff") format("woff"),
+    url("/fonts/Gotham-Light.ttf") format("truetype"),
+    url("/fonts/Gotham-Light.svg#GothamLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Book.eot");
+  src: url("/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Book.woff") format("woff"),
+    url("/fonts/Gotham-Book.ttf") format("truetype"),
+    url("/fonts/Gotham-Book.svg#GothamBook") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Medium.eot");
+  src: url("/fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Medium.woff") format("woff"),
+    url("/fonts/Gotham-Medium.ttf") format("truetype"),
+    url("/fonts/Gotham-Medium.svg#GothamMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Bold.eot");
+  src: url("/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Bold.woff") format("woff"),
+    url("/fonts/Gotham-Bold.ttf") format("truetype"),
+    url("/fonts/Gotham-Bold.svg#GothamBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Semibold.eot");
+  src: url("/fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/OpenSans-Semibold.woff") format("woff"),
+    url("/fonts/OpenSans-Semibold.ttf") format("truetype"),
+    url("/fonts/OpenSans-Semibold.svg#OpenSansSemibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply font-gotham text-[21px] antialiased text-black bg-white min-h-screen;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-normal;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  a:hover {
+    @apply border-b-2 border-dotted border-black;
+  }
+
+  table {
+    @apply border-collapse;
+  }
+
+  th,
+  td {
+    @apply text-left align-top;
+  }
+}
+
+@layer utilities {
+  @media print {
+    .no-print {
+      display: none;
+    }
+  }
+}

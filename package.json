@@ -1,17 +1,28 @@
 {
-  "name": "CV",
+  "name": "cv-nextjs",
   "version": "1.0.0",
-  "description": "website",
-  "main": "gruntfile.js",
+  "description": "Tom Randus CV built with Next.js",
   "scripts": {
-    "build": "yarn grunt",
-    "watch": "yarn grunt watch"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "deploy": "next build && next export && touch out/.nojekyll"
   },
-  "author": "",
+  "author": "Tom Randus",
   "license": "ISC",
   "dependencies": {
-    "grunt": "^1.6.1",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
   }
 }
