@@ -69,7 +69,7 @@ export const workExperience = [
     ],
   },
   {
-    company: "Radio Free Europe / Radio Liberty",
+    company: "Radio Free Europe",
     title: "Lead Front-end Developer",
     from: "2014",
     to: "2017",

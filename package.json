@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build",
-    "generate-pdf": "node generate-pdf-now.js",
+    "generate-pdf": "node generate-pdf.js",
     "start": "next start",
     "deploy": "next build && touch out/.nojekyll"
   },
