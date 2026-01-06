@@ -58,6 +58,8 @@ pnpm deploy
 - The PDF is saved to `public/tom-randus-cv.pdf`
 - The download button will serve the updated PDF
 
+**Note**: Make sure your development server (`pnpm dev`) is running before generating the PDF.
+
 ### Production Build
 
 For the final deployment, the PDF is automatically generated during the build process and included in the static export.
@@ -68,7 +70,7 @@ The CV includes a dynamic PDF generation feature that works differently in devel
 
 ### Development Mode
 
-- The PDF is generated on-demand by running `pnpm generate-pdf-dev` while the dev server is running
+- The PDF is generated on-demand by running `node generate-pdf-now.js` while the dev server is running
 - This connects to `http://localhost:3000/pdf` and generates a fresh PDF
 - The PDF is saved to `public/tom-randus-cv.pdf`
 - You can regenerate the PDF anytime by running the command again
@@ -121,14 +123,18 @@ The deployment process includes:
 ├── data/
 │   └── data.ts           # CV content (bio, experience, skills)
 ├── pages/
+│   ├── components/
+│   │   └── CVContent.tsx # Main CV component
+│   ├── _app.tsx          # Next.js app wrapper
 │   ├── index.tsx         # Main CV page with PDF download button
-│   ├── pdf.tsx           # PDF version (without download button)
-│   └── api/
-│       └── generate-pdf.ts  # API route for PDF generation
-├── scripts/
-│   └── generate-pdf-static.js  # Build-time PDF generation script
+│   └── pdf.tsx           # PDF version (without download button)
 ├── public/
-│   └── tom-randus-cv.pdf # Generated PDF (created during build)
+│   ├── fonts/            # Custom fonts (Gotham, OpenSans)
+│   ├── avatar.jpg        # Profile photo
+│   └── tom-randus-cv.pdf # Generated PDF
+├── styles/
+│   └── globals.css       # Global styles with Tailwind and font definitions
+├── generate-pdf-now.js   # PDF generation script
 └── out/                  # Static export output
 ```
 

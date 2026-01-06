@@ -73,11 +73,11 @@
   }
 
   a {
-    @apply no-underline;
+    @apply no-underline border-b-2 border-transparent;
   }
 
   a:hover {
-    @apply border-b-2 border-dotted border-black;
+    @apply border-dotted border-black;
   }
 
   table {
