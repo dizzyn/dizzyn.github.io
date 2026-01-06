@@ -150,7 +150,7 @@ export const skills = [
   {
     name: "AI & Machine Learning",
     description:
-      "**Primary Focus:** Developing AI-powered automation tools and Agents. Experience with LLM integration (OpenAI/Anthropic), RAG architectures, prompt engineering, and building intelligent workflows for AppSec.",
+      "AI Engineer specializing in building autonomous systems using LangGraph and the AI SDK. Implementing Agentic Browsing capabilities to automate complex workflows within the AppSec/QA domain.",
   },
   {
     name: "Full Stack Engineering",
