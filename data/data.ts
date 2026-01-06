@@ -20,7 +20,7 @@ export const bio = {
   experienceStart: 2002, // Opraveno podle první práce (Cleverlance 2002)
   github: "https://github.com/dizzyn",
   linkedin: "http://linkedin.com/in/randus",
-  hobbies: ["Violin", "Philosophy", "Continuous Learning", "Sports"],
+  hobbies: ["Violin", "Philosophy", "Sports"],
 };
 
 export const workExperience = [
