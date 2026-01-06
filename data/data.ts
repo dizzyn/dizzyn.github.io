@@ -3,7 +3,7 @@ export const bio = {
   birthDay: "1981-08-01",
   location: "Prague, Czech Republic",
   summary:
-    "Senior Staff Engineer (20+ years) bridging **Frontend Architecture** and **Product Management** with **Applied AI**. Specializing in **LLM Integration** and autonomous Agents to build secure, scalable, and **Intelligent User Interfaces**.",
+    "Senior Staff Engineer (20+ years) bridging **Frontend** and **Product Management** with **Applied AI**.",
   available: [
     {
       city: "Prague",
@@ -145,12 +145,11 @@ export const education = {
 
 export const memberships = ["cesko.digital", "Czechitas", "TEDxPrague"];
 
-// Sloučil jsem Skills a ExtraSkills pro větší přehlednost
 export const skills = [
   {
-    name: "AI & Machine Learning",
+    name: "AI & Agentic Browsing",
     description:
-      "AI Engineer specializing in building autonomous systems using LangGraph and the AI SDK. Implementing Agentic Browsing capabilities to automate complex workflows within the AppSec/QA domain.",
+      "AI Engineer specializing in building autonomous systems using LangGraph and the AI SDK. Implementing Browsing capabilities to automate complex workflows within the AppSec/QA domain.",
   },
   {
     name: "Full Stack Engineering",
