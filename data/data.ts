@@ -3,7 +3,7 @@ export const bio = {
   birthDay: "1981-08-01",
   location: "Prague, Czech Republic",
   summary:
-    "Senior Staff Engineer (20+ years) bridging **Frontend** and **Product Management** with **Applied AI**.",
+    "Senior Staff Engineer (20+ years) bridging **Full-stack**, **Product Management** and **Applied AI**.",
   available: [
     {
       city: "Prague",
@@ -20,7 +20,7 @@ export const bio = {
   experienceStart: 2002, // Opraveno podle první práce (Cleverlance 2002)
   github: "https://github.com/dizzyn",
   linkedin: "http://linkedin.com/in/randus",
-  hobbies: ["Violin", "Philosophy", "Sports"],
+  hobbies: ["Violin", "Philosophy", "Family"],
 };
 
 export const workExperience = [
@@ -29,43 +29,33 @@ export const workExperience = [
     from: "2025",
     to: "present",
     description: [
-      "**Security consultancy** at National Agency for Communication and IT",
-      "**AI Agent development** for AppSec automation and QA processes",
+      "Built **AI-driven automation tools** for Application Security and Quality Assurance",
+      "**Designing educational platforms** with gamification elements for primary school education",
+      "Engaged in high-level **security consultancy** for government infrastructure projects.",
     ],
   },
   {
     company: "Invicti Security",
-    title: "Staff Software Engineer",
+    title: "Staff Software Engineer (AppSec)",
     from: "2022",
     to: "2025",
     description: [
-      "Product development – TypeScript, Vue.js, Federated GraphQL",
+      "Product development – TypeScript, Vue.js, Node.js, Federated GraphQL",
+      "Typescript, GQL adoption leadership",
       "Accessibility implementation (WCAG 2.1 AA compliance)",
       "Agile Leadership and cross-team collaboration",
-      "Security-focused development practices",
     ],
   },
   {
     company: "Citrix",
-    title: "Staff Software Engineer",
-    from: "2019",
+    title: "Senior/Staff Software Engineer",
+    from: "2017",
     to: "2022",
     description: [
-      "React, GraphQL, large-scale JS→TS migration leadership",
-      "E2E testing automation with Playwright and custom tooling",
-      "Software Development Training programs and mentorship",
-      "Performance optimization for enterprise applications",
-    ],
-  },
-  {
-    company: "Sapho (acquired by Citrix)",
-    title: "Senior Software Engineer",
-    from: "2017",
-    to: "2019",
-    description: [
-      "Core member of development team for Business Intelligence Services (B2B)",
-      "Full-stack development: React/TypeScript/Node.js/Cordova",
-      "API design and microservices architecture",
+      "Full-stack: React/TypeScript/Node.js/Cordova...",
+      "Large-scale JS→TS and REST→GQL migration",
+      "Business Intelligence Services development (B2B)",
+      "Trainings and mentorship",
     ],
   },
   {
@@ -87,7 +77,7 @@ export const workExperience = [
     to: "2014",
     description: [
       "Custom eCommerce solutions development",
-      "WYSIWYG editor development for Magento platform",
+      "eCommerce platform development",
       "Team mentorship",
     ],
   },
@@ -97,7 +87,7 @@ export const workExperience = [
     from: "2011",
     to: "2012",
     description: [
-      "Product management for automated website publishing tools",
+      "Product management for website publishing tools",
       "Cross-functional team leadership and stakeholder management",
     ],
   },
@@ -108,7 +98,7 @@ export const workExperience = [
     to: "2011",
     description: [
       "Product management for payment solutions and mobile applications",
-      "Team education and training program development",
+      "Team education and trainings",
     ],
   },
   {
@@ -117,9 +107,10 @@ export const workExperience = [
     from: "2004",
     to: "2007",
     description: [
-      "Co-founded technology company (6 employees)",
       "CTO and Senior Java Developer roles",
+      "Publishing & payment tools",
       "Product strategy and business development",
+      "Go-to-market activities",
     ],
   },
   {
@@ -157,6 +148,11 @@ export const skills = [
       "Expert in TypeScript/JavaScript ecosystem (React, Vue.js, Node.js). Focus on large-scale architecture, performance optimization, and maintainable codebases.",
   },
   {
+    name: "Product Management",
+    description:
+      "Strategic product delivery, agile transformation, and release management. Strong background in connecting business requirements with technical execution.",
+  },
+  {
     name: "Application Security (AppSec)",
     description:
       "Security-focused development, vulnerability assessment automation, and secure coding standards. Bridging the gap between Engineering and Security teams.",
@@ -165,11 +161,6 @@ export const skills = [
     name: "GraphQL & API Architecture",
     description:
       "Deep expertise in GraphQL Federation, Apollo ecosystem, and Microservices architecture. Designing scalable backend systems.",
-  },
-  {
-    name: "Product Management",
-    description:
-      "Strategic product delivery, agile transformation, and release management. Strong background in connecting business requirements with technical execution.",
   },
   {
     name: "Accessibility (WCAG)",
